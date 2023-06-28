@@ -1,16 +1,31 @@
+import ContactForm from './ContactForm/ContactForm';
+import ContactList from './ContactList/ContactList';
+import Filter from './Filter/Filter';
+
 export const App = () => {
+
+
+  // const [contacts, setContacts] = useState(() => {
+  //   const contactsList = JSON.parse(localStorage.getItem(lokalStorageKey));
+  //   return contactsList && contactsList.length ? contactsList : '';
+  // });
+
+  // useEffect(() => {
+  //   const contactsList = JSON.parse(localStorage.getItem(lokalStorageKey));
+
+  // }, []);
+  
+
+
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <>
+      <div>
+        <h1>Phonebook</h1>
+        <ContactForm/>
+        <h2>Contacts</h2>
+        <Filter/>
+        <ContactList/>
+      </div>
+    </>
   );
 };
