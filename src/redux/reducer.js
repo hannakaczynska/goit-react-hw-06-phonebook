@@ -1,4 +1,4 @@
-import { addContact, deleteContact, addFilter, setContacts } from './actions';
+import { addContact, deleteContact, addFilter } from './actions';
 import { createReducer } from '@reduxjs/toolkit';
 
 const contactInitialState = [];
@@ -9,9 +9,6 @@ export const contactsReducer = createReducer(contactInitialState, {
   },
   [deleteContact]: (state, action) => {
     return state.filter(contact => contact.id !== action.payload);
-  },
-  [setContacts]: (state, action) => {
-    return action.payload;
   },
 });
 
