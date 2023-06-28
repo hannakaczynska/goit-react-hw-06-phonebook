@@ -4,19 +4,6 @@ import Filter from './Filter/Filter';
 
 export const App = () => {
 
-
-  // const [contacts, setContacts] = useState(() => {
-  //   const contactsList = JSON.parse(localStorage.getItem(lokalStorageKey));
-  //   return contactsList && contactsList.length ? contactsList : '';
-  // });
-
-  // useEffect(() => {
-  //   const contactsList = JSON.parse(localStorage.getItem(lokalStorageKey));
-
-  // }, []);
-  
-
-
   return (
     <>
       <div>
